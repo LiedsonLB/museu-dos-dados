@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="icon"
+        href="https://images.vexels.com/media/users/3/137615/isolated/preview/5af2a9cbd8cd93aa90889fbc05656cb5-cubo-de-logotipo-abstrato-geometrico.png"
+        type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museu dos cubos - Liedson Barros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <canvas id="webglCanvas" width="800" height="600"></canvas>
+
+        <div class="controls-panel">
+            <h2>Museu dos cubos - <p>by Liedson Barros</p>
+            </h2>
+
+            <div class="control-section">
+                <h3>Câmera</h3>
+                <p>Posição: <span id="camera-pos">x: 0.0, y: 2.0, z: 8.0</span></p>
+            </div>
+
+            <div class="control-section">
+                <h3>Objeto Selecionado: <span id="selected-obj">1</span></h3>
+                <div class="object-buttons">
+                    <button onclick="selectObject(0)" class="active" id="obj-1">Obj 1</button>
+                    <button onclick="selectObject(1)" id="obj-2">Obj 2</button>
+                    <button onclick="selectObject(2)" id="obj-3">Obj 3</button>
+                </div>
+            </div>
+
+            <div class="control-section">
+                <h3>Controles por Teclado</h3>
+                <div class="controls-grid">
+                    <div class="control-group">
+                        <h4>Translação</h4>
+                        <p>W/S: Frente/Trás</p>
+                        <p>A/D: Esquerda/Direita</p>
+                        <p>Q/E: Cima/Baixo</p>
+                    </div>
+
+                    <div class="control-group">
+                        <h4>Rotação</h4>
+                        <p>I/K: Inclinar</p>
+                        <p>J/L: Girar</p>
+                        <p>U/O: Rolar</p>
+                    </div>
+
+                    <div class="control-group">
+                        <h4>Escala</h4>
+                        <p>R: Aumentar</p>
+                        <p>F: Diminuir</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-section">
+                <h3>Status do Objeto</h3>
+                <div id="object-status">
+                    <p>Posição: <span id="obj-position">(0.0, 0.0, 0.0)</span></p>
+                    <p>Rotação: <span id="obj-rotation">(0.0, 0.0, 0.0)</span></p>
+                    <p>Escala: <span id="obj-scale">(1.0, 1.0, 1.0)</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="webgl-utils.js"></script>
+    <script src="matrix-utils.js"></script>
+    <script src="geometry.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
