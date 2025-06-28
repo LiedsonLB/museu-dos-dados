@@ -58,15 +58,6 @@ function createCubeColors() {
         [0.0, 1.0, 0.0, 1.0],  // Cor Direita
         [0.0, 0.0, 1.0, 1.0],  // Cor Esquerda
     ];
-
-    //     const faceColors = [
-    //     [1.0, 0.5, 0.0, 1.0],  // Laranja
-    //     [0.5, 0.0, 0.5, 1.0],  // Roxo escuro
-    //     [0.5, 0.5, 0.5, 1.0],  // Cinza
-    //     [1.0, 0.75, 0.8, 1.0], // Rosa claro
-    //     [0.0, 0.5, 0.0, 1.0],  // Verde escuro
-    //     [0.2, 0.6, 1.0, 1.0],  // Azul claro
-    // ];
     
     let colors = [];
     for (let j = 0; j < faceColors.length; ++j) {
